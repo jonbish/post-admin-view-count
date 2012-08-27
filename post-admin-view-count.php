@@ -28,7 +28,7 @@ class PostAdminViewCount {
         $stats_options = get_option( 'stats_options' );
         $blog_id = $stats_options['blog_id'];
         $api_key = $stats_options['api_key'];
-        $query_string = "http://stats.wordpress.com/csv.php?api_key=f4e5da02b97d&blog_id=3778956&table=postviews&days=-1&format=json";
+        $query_string = "http://stats.wordpress.com/csv.php?api_key=".$api_key."&blog_id=".$blog_id."&table=postviews&days=-1&format=json";
         // Make it happen
         return $views;
     }
