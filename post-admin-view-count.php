@@ -45,7 +45,7 @@ class PostAdminViewCount {
     // Add data to new columns of action post type
     function pvc_column($column) {
         global $post, $pvc_last;
-        if ("post_view_count" == $column) {
+        if ("post_view_count" == $column && $post->post_status == 'publish') {
             // Grab a fresh view count
             $view_count = get_post_meta($post->ID, '_post_view_count', true);
             if(empty($view_count) && $view_count !== 0){
