@@ -10,7 +10,7 @@ Adds a sortable column to the admin's post manager, displaying the view count fo
 
 == Description ==
 
-Post View Count used the WordPress.com stats API to add a sortable column to the admin's post manager, displaying the view count for each post. This plugin requires the Jetpack plugin to work.
+Post View Count used the WordPress.com stats API to add a sortable column to the admin's post manager, displaying the view count for the last 30 days for each post. This plugin requires the Jetpack plugin to function.
 
 == Installation ==
 
